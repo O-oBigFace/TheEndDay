@@ -210,7 +210,7 @@ def spider_file(file_name):
         if author is None:
             result_list.append((id,))
             continue
-        logger.info("%d | %s" % (id, str(author)))
+        # logger.info("%d | %s" % (id, str(author)))
         _name = author.name
         affiliation = author.affiliation
         email = author.email
