@@ -74,7 +74,7 @@ def _get_soup(pagerequest):
     return BeautifulSoup(html, 'html.parser')
 
 
-def _search_citation_soup(soup, proxy):
+def _search_citation_soup(soup):
     """Generator that returns Author objects from the author search page"""
     while True:
         for row in soup.find_all('div', 'gsc_1usr'):
