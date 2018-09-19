@@ -22,8 +22,8 @@ only spider
 # _COOKIES = {'GSP': 'ID={0}:CF=4'.format(_GOOGLEID)}
 
 # _GEONAMES_USER = "huan2018"
-_GEONAMES_USER = "bigface"
-_HOST_GEONAMES = "http://api.geonames.org/wikipediaSearchJSON?q={0}&maxRows=10&username=" + _GEONAMES_USER
+_GEONAMES_USER = ["bigface", "huan2018"]
+_HOST_GEONAMES = "http://api.geonames.org/wikipediaSearchJSON?q={0}&maxRows=10&username=" + random.choice(_GEONAMES_USER)
 _HEADERS_GEONAMES = {
     # 'accept-language': 'en-US,en',
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36',
@@ -163,7 +163,7 @@ def get_country(affiliation):
     d = get_country_code()
     js = None
     times = 0
-    url = _HOST_GEONAMES.format(requests.utils.quote(affiliation[i]))
+    url = _HOST_GEONAMES.format(requests.utils.quote(affiliation))
     while js is None and times <= 6:
         if times > 0:
             time.sleep(times)
