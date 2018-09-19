@@ -10,6 +10,7 @@ import json
 from multiprocessing import Process
 import scholar
 from countryInfo import get_country_code
+import sys
 
 """
 only spider
@@ -226,7 +227,8 @@ def spider_file(file_name):
 
 
 if __name__ == '__main__':
-    spider_file("AI")
+    file_name = sys.argv[1]
+    spider_file(file_name)
 
 
 
