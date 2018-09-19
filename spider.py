@@ -201,12 +201,16 @@ def spider_file(file_name):
             try:
                 author = next(scholar.search_author(name)).fill()
                 break
+            except StopIteration as e:
+                logger.error("%s | %d | %s | %s | trries: %d" % (file_name, id, name, str(e), max_tries))
+                break
             # 如果谷歌学术中不存在该学者的信息，则记录默认值
             except Exception as e:
                 max_tries += 1
                 logger.error("%s | %d | %s | %s | trries: %d" % (file_name, id, name, str(e), max_tries))
                 time.sleep(max_tries)
                 author = None
+
         if author is None:
             result_list.append((id,))
             continue
