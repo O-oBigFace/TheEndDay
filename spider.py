@@ -174,7 +174,7 @@ def get_country(affiliation):
         except Exception as e:
             logger.error("%d | %s" % (affiliation, str(e)))
             js = None
-    data = js.setdefault("geonames", "")
+    data = json.loads(js).setdefault("geonames", "")
     if len(data) < 1:
         return ""
     return d.setdefault(data[0].setdefault("countryCode", ""), "")
