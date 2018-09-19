@@ -226,7 +226,7 @@ def spider_file(file_name):
         i10index5y = author.i10index5y
         url_picture = author.url_picture
         country = get_country(affiliation)
-        item = (id, _name, affiliation, email, citedby, hindex, hindex5y,i10index, i10index5y, url_picture, country)
+        item = (int(id), _name, affiliation, email, citedby, hindex, hindex5y, i10index, i10index5y, url_picture, country)
         result_list.append(item)
         print(item)
     else:
