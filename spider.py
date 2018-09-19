@@ -221,7 +221,9 @@ def spider_file(file_name):
         i10index5y = author.i10index5y
         url_picture = author.url_picture
         country = get_country(affiliation)
-        result_list.append((_name, affiliation, email, citedby, hindex, hindex5y,i10index, i10index5y, url_picture, country))
+        item = (_name, affiliation, email, citedby, hindex, hindex5y,i10index, i10index5y, url_picture, country)
+        result_list.append(item)
+        logger.info(json.dumps(item))
     else:
         save_list_to_file(path_result, result_list)
 
