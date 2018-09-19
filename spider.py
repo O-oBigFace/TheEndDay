@@ -160,6 +160,7 @@ def _parser_xlsx(file_name):
 def get_country(affiliation):
     if len(affiliation) < 1:
         return ""
+    affiliation = affiliation.split(",")[-1]
     d = get_country_code()
     js = None
     times = 0
