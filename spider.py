@@ -203,7 +203,7 @@ def spider_file(file_name):
                 author = next(scholar.search_author(name)).fill()
                 break
             except StopIteration as e:
-                logger.error("%s | %d | %s | %s | trries: %d" % (file_name, id, name, str(e), max_tries))
+                logger.error("%s | %d | %s | %s | Not Found." % (file_name, id, name, str(e)))
                 break
             # 如果谷歌学术中不存在该学者的信息，则记录默认值
             except Exception as e:
@@ -228,7 +228,7 @@ def spider_file(file_name):
         country = get_country(affiliation)
         item = (int(id), _name, affiliation, email, citedby, hindex, hindex5y, i10index, i10index5y, url_picture, country)
         result_list.append(item)
-        print(item)
+        logger.info(item)
     else:
         save_list_to_file(path_result, result_list)
 
