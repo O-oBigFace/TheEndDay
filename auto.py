@@ -6,10 +6,9 @@ import sys
 
 
 def multi_process(function_name, file_list):
-    arglist = [(file) for file in file_list]
-    print(arglist)
-
+    arglist = [(file,) for file in file_list]
     for arg in arglist:
+        print(arg)
         process = Process(target=function_name, args=arg)
         process.start()
         time.sleep(3)

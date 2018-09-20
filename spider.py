@@ -234,7 +234,7 @@ def spider_file(file_name):
         country = get_country(affiliation)
         item = (id, _name, affiliation, email, citedby, hindex, hindex5y, i10index, i10index5y, url_picture, country)
         result_list.append(item)
-        logger.info(item)
+        logger.info("%s | %s" % (file_name, json.dumps(item)))
     else:
         save_list_to_file(path_result, result_list)
 
