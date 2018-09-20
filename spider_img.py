@@ -11,15 +11,15 @@ def spider_file(file_name):
     # 解析xlsx文件
     m = util.csv_to(file_name, dir="result")
     expert_id = m.iloc[:, 0]
-    expert_pic = m.iloc[:, 6]
+    expert_pic = m.iloc[:, 7]
     item = [(expert_id[i], expert_pic[i]) for i in range(len(expert_id))]
 
     # expert 都是从1开始编号，在文件中都从第二行开始
     for id, pic in item:
-        if "user=&" in pic or "cleardot" in pic or "avatar_scholar" in pic:
+        if len(pic) < 1 or "user=&" in pic or "cleardot" in pic or "avatar_scholar" in pic:
             continue
 
-        path_result = os.path.join(util.PATH_DIR_RESULT, "img", "%d_%s.jpg") % (file_name, str(id))
+        path_result = os.path.join(util.PATH_DIR_RESULT, "img", "%s_%s.jpg") % (file_name, str(id))
         pic = "https://scholar.google.com" + pic if pic[0] is "/" else pic
 
         data = None
