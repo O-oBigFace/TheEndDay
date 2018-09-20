@@ -147,3 +147,4 @@ def search_author(name):
     url = _AUTHSEARCH.format(requests.utils.quote(name))
     soup = _get_soup(_HOST+url)
     return _search_citation_soup(soup)
+

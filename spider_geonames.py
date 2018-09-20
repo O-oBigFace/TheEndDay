@@ -136,7 +136,7 @@ def get_country(affiliation):
             js = _get_page(url)
             break
         except Exception as e:
-            logger.error("%d | %s" % (affiliation, str(e)))
+            logger.error("%s | %s" % (affiliation, str(e)))
             js = None
     data = json.loads(js).setdefault("geonames", "")
     if len(data) < 1:
@@ -235,7 +235,7 @@ def spider_file(file_name):
             continue
 
         # logger.info("%d | %s" % (id, str(author)))
-        google_id = author.id
+        # google_id = author.id
         _name = author.name
         affiliation = author.affiliation
         # email = author.email

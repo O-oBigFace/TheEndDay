@@ -5,7 +5,7 @@ from countryInfo import get_country_code
 import openpyxl
 
 
-# 特定任务
+# 特定转换任务
 def _xlsx_to_csv(name_excel, name_csv):
     path = os.path.join(os.getcwd(), "data")
     path_excel = os.path.join(path, name_excel + ".xlsx")
@@ -90,7 +90,7 @@ def _parser_result_gs_gn(name):
         for line in f.readlines():
             l = json.loads(line.strip())
             if 0 < len(l) < 2:
-                l = [l[0], "", "", "", "", -1, -1, -1, -1, -1, "", ""]
+                l = [l[0], "", "", "", -1, -1, ""]
             result_list.append(list(l))
 
     return pd.DataFrame(result_list)
@@ -107,7 +107,7 @@ def _parser_result_g2r(name):
         for line in f.readlines():
             l = json.loads(line.strip())
             if 0 < len(l) < 2:
-                l = [l[0], "", "", "", "", -1, -1, -1, -1, -1, "", ""]
+                l = [l[0], "", "", "", -1, -1, ""]
             result_list.append(list(l))
 
     return pd.DataFrame(result_list)
@@ -138,6 +138,3 @@ if __name__ == '__main__':
     # mat_main.iloc[:, 1] = name_row
 
     # print(mat_main)
-
-    _xlsx_to_csv(field, field)
-
