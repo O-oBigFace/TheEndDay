@@ -17,6 +17,7 @@ def multi_process(function_name, file_list):
 
 if __name__ == '__main__':
     file_list = []
+
     for i in range(1, len(sys.argv)):
         file_list.append(sys.argv[i])
 
