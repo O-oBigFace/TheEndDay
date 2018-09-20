@@ -1,0 +1,101 @@
+,id,name,affiliation,country,hindex,citation,url_picture
+0,7147,Bert Vogelstein,Johns Hopkins,United States,251,367519,/citations/images/avatar_scholar_128.png
+1,7241,Tom Maniatis,"Chairman of Biochemistry, Columbia University Medical School",United States,150,329925,/citations/images/avatar_scholar_128.png
+2,7547,Masatoshi Nei,"Laura Carnell Professor of Biology, Temple University",Cambodia,120,318264,/scholar/images/cleardot.gif
+3,7142,Shizuo Akira,Osaka University,Japan,262,325080,/citations/images/avatar_scholar_128.png
+4,7283,Robert Tibshirani,"Professor of Biomedical Data Sciences, and  of  Statistics, Stanford University",United States,140,277698,/scholar/images/cleardot.gif
+5,7150,Salim Yusuf,"Population Health Research Institute, McMaster University and Hamilton Health Sciences",Canada,234,280629,/citations/images/avatar_scholar_128.png
+6,7146,Robert Langer,"David H. Koch Institute Professor, MIT",United States,260,271995,/scholar/images/cleardot.gif
+7,7149,Michael Karin,"Professor of Pharmacology and Pathology,UCSD,School of Medicine",Canada,236,254072,/citations/images/avatar_scholar_128.png
+8,7190,David Botstein,Princeton University,United States,175,219749,/citations/images/avatar_scholar_128.png
+9,7152,Matthias Mann,"Max Planck Institute of Biochemistry, Munich and CPR, University of Copenhagen",Denmark,214,210816,/scholar/images/cleardot.gif
+10,7159,Daniel Levy,"National Heart, Lung, and Blood Institute",Russia,206,206372,/citations?view_op=view_photo&user=xmOaZ8EAAAAJ&citpid=2
+11,7154,Guido Kroemer,"Paris Descartes University, Hôpital Européen George Pompidou - AP-HP, Gustave Roussy Cancer Campus",,213,200778,/scholar/images/cleardot.gif
+12,7153,A S Fauci,NIAID,United States,212,192728,/citations/images/avatar_scholar_128.png
+13,7851,David Harvey,"Distinguished Professor, City University of New York",United States,112,194460,/citations/images/avatar_scholar_128.png
+14,7155,Peter Libby,Professor of Medcine Harvard Medical School,,212,189868,/citations?view_op=view_photo&user=1LgbXjEAAAAJ&citpid=2
+15,7168,Peer Bork,EMBL,Germany,185,186926,/scholar/images/cleardot.gif
+16,7256,David Haussler,"Scientific Director, UC Santa Cruz Genomics Institute, University of California, Santa Cruz",United States,150,172500,/citations?view_op=view_photo&user=S2OjOvYAAAAJ&citpid=2
+17,7176,Yusuke Nakamura,"University of Chicago, University of Tokyo, RIKEN, Cancer Institute, Univ. of Utah, Osaka Univ.",United States,180,165479,/scholar/images/cleardot.gif
+18,7178,Leroy Hood,Institute for Systems Biology,United States,178,154333,/citations/images/avatar_scholar_128.png
+19,7216,Jiawei Han,"Abel Bliss Professor of Computer Science, University of Illinois",United States,161,156989,/scholar/images/cleardot.gif
+20,7167,Joan Massague,Memorial Sloan Kettering Cancer Cencer,,184,151462,/citations/images/avatar_scholar_128.png
+21,7578,Richard Durbin,"Dept of Genetics, University of Cambridge",United Kingdom,120,155806,/scholar/images/cleardot.gif
+22,7169,Alberto Mantovani,"Direttore Scientifico, Istituto Clinico Humanitas, Humanitas University",South Korea,184,152783,/citations/images/avatar_scholar_128.png
+23,7191,Jan Ake Gustafsson,"Robert A. Welch Professor, Department of Biology and Biochemistry, University of Houston",United States,174,148664,/scholar/images/cleardot.gif
+24,7231,Chris Sander,"Dana-Farber Cancer Institute, Harvard Medical School, Memorial Sloan Kettering Cancer Center",United States,155,150739,/scholar/images/cleardot.gif
+25,7237,David Altshuler,,,-1,-1,
+26,7702,Jitendra Malik,"Professor of EECS, UC Berkeley",United States,116,146526,/citations?view_op=view_photo&user=oY9R5YQAAAAJ&citpid=2
+27,7336,Matthias Egger,"Professor of Epidemiology & Public Health, University of Bern",Switzerland,139,147885,/citations?view_op=view_photo&user=Hlnca80AAAAJ&citpid=2
+28,7366,Stacey Gabriel,The Broad Institute of Harvard and MIT,United States,139,150278,/citations?view_op=view_photo&user=CAAHoD8AAAAJ&citpid=1
+29,7173,Tony Hunter,Salk Institute,United States,179,134348,/citations/images/avatar_scholar_128.png
+30,7192,Luigi Ferrucci,"National Institute on Aging, NIH",United States,177,151001,/citations/images/avatar_scholar_128.png
+31,7348,Paul Zimmet,Monash bakerIDI,,137,147545,/citations/images/avatar_scholar_128.png
+32,7182,Joseph Schlessinger,Yale university School of Medicine,United States,176,127954,/scholar/images/cleardot.gif
+33,7205,Jeffrey Cummings,Cleveland Clinic Lou Ruvo Center for Brain Health,United States,169,128867,/citations?view_op=view_photo&user=FxCTO5wAAAAJ&citpid=2
+34,7183,Ralph Weissleder,"Professor, Harvard Medical School",United States,177,128612,/citations?view_op=view_photo&user=zmcj4NwAAAAJ&citpid=2
+35,7221,Didier Raoult,"IHU Méditerranée Infection, Aix Marseille Université, AP-HM CHU Timone, Marseille, FRANCE",France,162,127298,/citations/images/avatar_scholar_128.png
+36,7203,Hans Clevers,Hubrecht Institute - Utrecht,,171,127826,/citations?view_op=view_photo&user=jTAHhTQAAAAJ&citpid=2
+37,7189,Tomas Hökfelt,"Senior professor, Karolinska Institutet",Sweden,177,124671,/citations/images/avatar_scholar_128.png
+38,7309,Rob Knight,"Professor of Pediatrics, Bioengineering and Computer Science & Engineering, UC San Diego",United States,147,132538,/scholar/images/cleardot.gif
+39,7730,Ewan Birney,"Director, EMBL-EBI",United Kingdom,113,123710,/scholar/images/cleardot.gif
+40,7212,Zena Werb,"Professor of Anatomy, University of California San Francisco",United States,163,119128,/scholar/images/cleardot.gif
+41,7437,Panos Deloukas,"Professor of Cardiovascular Genomics, Queen Mary University of London",United Kingdom,134,136177,/scholar/images/cleardot.gif
+42,7247,Markku Laakso,"Professor of Internal Medicine, University of Eastern Finland",China,155,128185,/scholar/images/cleardot.gif
+43,7225,Yi Cui,Stanford University,United States,168,128507,/scholar/images/cleardot.gif
+44,7222,Peter Carmeliet,"hoogleraar, Universiteit van Leuven, VIB",Belgium,162,120451,/citations/images/avatar_scholar_128.png
+45,7232,Carlo La Vecchia,Università degli Studi di Milano,Italy,154,115586,/scholar/images/cleardot.gif
+46,7439,Akira Fujishima,Tokyo University of Science,,130,114586,/citations?view_op=view_photo&user=ToiluS0AAAAJ&citpid=2
+47,7304,Josef Coresh,Johns Hopkins University,United States,144,126744,/citations?view_op=view_photo&user=Qxtj86kAAAAJ&citpid=2
+48,7234,Mark Gerstein,"Professor of Biomedical Informatics, Yale University",United States,155,113116,/citations/images/avatar_scholar_128.png
+49,7442,Gad Getz,Massachusetts General Hospital and Broad Institute of Harvard and MIT,United States,135,116760,/scholar/images/cleardot.gif
+50,7238,Philippe Froguel,Imperial College London and CNRS-Lille univ,,154,107101,/citations?view_op=view_photo&user=hYzT7KcAAAAJ&citpid=1
+51,7197,Nahum Sonenberg,James McGill Professor,Canada,170,104110,/citations/images/avatar_scholar_128.png
+52,7261,Roberto Romero,"Chief, Perinatology Research Branch, NICHD/NIH",United States,149,103092,/scholar/images/cleardot.gif
+53,7403,Joseph Loscalzo,"Professor of Medicine, Harvard Medical School",United States,132,100968,/citations/images/avatar_scholar_128.png
+54,7184,Joel Schwartz,Harvard School of Public Health,United States,173,101066,/citations?view_op=view_photo&user=7GdrijgAAAAJ&citpid=1
+55,7262,Jean Bousquet,Professor,,149,100528,/citations?view_op=view_photo&user=BY64DW8AAAAJ&citpid=2
+56,7945,Dariush Mozaffarian,Friedman School of Nutrition Science & Policy,United States,110,100854,/citations/images/avatar_scholar_128.png
+57,7285,Gabriel Nuñez,"Paul de Kruif Professor, University of Michigan Medical School",United States,147,98419,/scholar/images/cleardot.gif
+58,7704,Mary Cushman,University of Vermont,United States,117,106450,/scholar/images/cleardot.gif
+59,7250,Joseph Wang,University California San Diego,United States,154,97486,/scholar/images/cleardot.gif
+60,7406,Antonio Lanzavecchia,"Professor of Immunology ETH Zurich, Director Institute for Research in Biomedicine",Germany,132,93467,/citations/images/avatar_scholar_128.png
+61,7377,Gérald Simonneau,Unknown affiliation,,135,94638,/scholar/images/cleardot.gif
+62,7268,Jaakko Kaprio,University of Helsinki,Finland,149,95842,/scholar/images/cleardot.gif
+63,7264,Robert Plomin,King's College London,United Kingdom,150,93525,/scholar/images/cleardot.gif
+64,7414,Li Wei,"Yeungnam University, School of Biotechnology",South Korea,134,98665,/citations/images/avatar_scholar_128.png
+65,7324,Helmut Sies,"Biochemie und Molekularbiologie I,Heinrich-Heine-Universität Düsseldorf",,143,92541,/scholar/images/cleardot.gif
+66,7340,Lei Li,"Duke University, CERN",Switzerland,150,114494,/citations?view_op=view_photo&user=f4KlrXIAAAAJ&citpid=2
+67,7325,Philip Jones,University of East Anglia,United Kingdom,140,92062,/scholar/images/cleardot.gif
+68,7443,Yehuda Shoenfeld,Санкт-Петербургский государственный университет,Germany,130,92397,/scholar/images/cleardot.gif
+69,7429,Shigekazu Nagata,"Immunology Frontier Research Center, Osaka University",Japan,128,89395,/citations/images/avatar_scholar_128.png
+70,7269,Giorgio Trinchieri,"Director, Cancer and Inflammation Program, Center for Cancer Research, NCI, NIH",United States,147,88397,/citations?view_op=view_photo&user=csSZxogAAAAJ&citpid=2
+71,7529,Michael Boehnke,"Professor of Biostatistics, University of Michigan",United States,124,97661,/scholar/images/cleardot.gif
+72,7430,Antonio Amorim,Professor Catedrático de Física na Faculdade de Ciências da Universidade de Lisboa,,132,93543,/scholar/images/cleardot.gif
+73,7751,Noboru Mizushima,The University of Tokyo,,110,90499,/citations/images/avatar_scholar_128.png
+74,7233,Bernard Moss,National Institutes of Health,United States,154,86749,/scholar/images/cleardot.gif
+75,7333,Yang Yang,Seoul National Univesity,,189,187399,/scholar/images/cleardot.gif
+76,7276,Frederik Barkhof,VU University Medical Center,Netherlands,150,88407,/citations?view_op=view_photo&user=rjEG-7EAAAAJ&citpid=2
+77,7334,Manel Esteller,"Director, Cancer Epigenetics and Biology Program, IDIBELL, University of Barcelona and ICREA",,138,86916,/citations?view_op=view_photo&user=CcOf8ycAAAAJ&citpid=1
+78,7277,Bart Staels,Professeur Université Lille,France,148,86320,/citations?view_op=view_photo&user=HWK2-3wAAAAJ&citpid=2
+79,7530,Pak Sham,"Centre for Genomic Sciences, The University of Hong Kong",Hong Kong,123,86724,/scholar/images/cleardot.gif
+80,7496,Tom Tyler,"Professor of Law and Psychology, Yale University",United States,126,87151,/scholar/images/cleardot.gif
+81,7386,Albert de la Chapelle,"Professor, Ohio State University",United States,132,84791,/citations/images/avatar_scholar_128.png
+82,7281,Johan Auwerx,EPFL,Switzerland,149,84872,/citations/images/avatar_scholar_128.png
+83,7301,George Perry,"Professor of Biology and Chemistry, University of Texas at San Antonio",United States,145,82512,/scholar/images/cleardot.gif
+84,7270,Pier Paolo Pandolfi,"Director, Cancer Center and Cancer Research Institute, Beth Israel Deaconess Medical Center",United States,147,82382,/citations?view_op=view_photo&user=VoWkBjUAAAAJ&citpid=2
+85,7387,Bernard Henrissat,"CNRS, Marseille",France,132,83819,/scholar/images/cleardot.gif
+86,7240,Stanley Falkow,Stanford University,United States,153,80915,/citations/images/avatar_scholar_128.png
+87,7282,Teruo Okano,"Institute of Advanced BiomedicalEngineering and Science, Tokyo Women's Medical University",,149,82408,/scholar/images/cleardot.gif
+88,7707,Oluf Pedersen,"Professor of Metabolic Genetics, University of Copenhagen",Denmark,116,91554,/scholar/images/cleardot.gif
+89,7342,Jie Yu,"Iowa State University, Oklahoma State University, CERN, Nanjing University, CEA Saclay / Paris 11",,141,79970,/scholar/images/cleardot.gif
+90,7306,Richard Mayeux,"Chair and Professor of Neurology, Director of the Taub Institute for Research on Alzheimer's Disease",,143,81062,/citations?view_op=view_photo&user=85TPZtwAAAAJ&citpid=2
+91,7754,Junying Yuan,harvard medical school,United States,112,79630,/citations?view_op=view_photo&user=wklInmgAAAAJ&citpid=1
+92,7776,Vikas Bansal,Pacific Northwest National Laboratory,United States,114,75875,/citations?view_op=view_photo&user=mRIKfRcAAAAJ&citpid=2
+93,7532,Shlomo Havlin,"Professor of Physics, Bar-Ilan University",Germany,126,78216,/scholar/images/cleardot.gif
+94,7293,Eduardo Salas,Rice University,United States,145,77894,/citations/images/avatar_scholar_128.png
+95,7307,Janet Rossant,University of Toronto,Canada,141,76385,/citations/images/avatar_scholar_128.png
+96,7990,Beth Levine,University of Texas Southwestern Medical Center,United States,101,77799,/scholar/images/cleardot.gif
+97,7344,Pasko Rakic,Yale University,United States,139,76186,/scholar/images/cleardot.gif
+98,7801,Jason Lee,"Associate Professor of Sport Management & Program Coordinator, University of North Florida",United States,111,81393,/scholar/images/cleardot.gif
+99,7370,Marc Feldmann,Imperial College and Oxford,United Kingdom,134,75676,/citations/images/avatar_scholar_128.png

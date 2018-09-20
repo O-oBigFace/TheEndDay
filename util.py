@@ -7,9 +7,9 @@ import numpy as np
 PATH_DIR_RESULT = os.path.join(os.getcwd(), "result")
 
 
-def csv_to(name):
+def csv_to(name, dir="data"):
     _NAME_CSV = name
-    _PATH_CSV = os.path.join(os.getcwd(), "data", "{}.csv".format(_NAME_CSV))
+    _PATH_CSV = os.path.join(os.getcwd(), dir, "{}.csv".format(_NAME_CSV))
 
     mat = pd.read_csv(_PATH_CSV)
 

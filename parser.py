@@ -101,7 +101,7 @@ def _parser_result_g2r(name):
     name = name.strip("\'\" ")
     path = os.path.join(os.getcwd(), "result", "g2r")
     filename = get_file_name(name, path)
-
+    # print(filename)
     result_list = []
     with open(os.path.join(path, filename), "r", encoding="utf-8") as f:
         for line in f.readlines():
@@ -113,28 +113,44 @@ def _parser_result_g2r(name):
     return pd.DataFrame(result_list)
 
 
+def update(field):
+    mat_main = _parser_result_gs_gn(field)
+    country_main = mat_main.iloc[:, 3].values.tolist()
+
+    # 1. 更新国家
+    mat_com = _parser_result_g2r(field)
+    country_com = mat_com.iloc[:, 3].values.tolist()
+
+    # 3. 更新pic
+    pic_com = mat_com.iloc[:, 6].values.tolist()
+    pic_main = mat_main.iloc[:, 6].values.tolist()
+
+    for i in range(len(country_main)):
+        if len(country_com[i]) > 1:
+            country_main[i] = country_com[i]
+        if len(pic_main[i]) < 1:
+            pic_main[i] = pic_com[i]
+
+    mat_main.iloc[:, 3] = country_main
+    mat_main.iloc[:, 6] = pic_main
+
+    # 2. 更新name
+    mat_row = _csv(field)
+    name_row = mat_row.iloc[:, 1].values.tolist()
+    mat_main.iloc[:, 1] = name_row
+
+    mat_main.to_csv(os.path.join(os.getcwd(), "result", "%s.csv" % field),
+                    header=["id", "name", "affiliation", "country", "hindex", "citation", "url_picture"])
+
+
 if __name__ == '__main__':
-    field = "machine learning"
-    #
-    # mat_main = _parser_result_gs_gn(field)
-    # country_main = mat_main.iloc[:, 11].values.tolist()
-
-    # # 1. 更新国家
-    # mat_com = _parser_result_g2r(field)
-    # country_com = mat_com.iloc[:, 11].values.tolist()
-    #
-    # for i in range(len(country_main)):
-    #     if len(country_com[i]) > 1:
-    #         country_main[i] = country_com[i]
-    #
-    # mat_main.iloc[:, 11] = country_main
-
-    # 2. 更新name, id
-    # mat_row = _parser_xlsx(field)
-    # print(mat_row)
-    # name_row = mat_row.iloc[:, 2].values.tolist()
-    # id_row = mat_row.iloc[:, 1].values.tolist()
-    # mat_main.iloc[:, 0] = id_row
-    # mat_main.iloc[:, 1] = name_row
-
-    # print(mat_main)
+    fields = [
+        "AI",
+              "blockchain",
+              "computer science",
+              "data mining",
+              "genetics",
+              "machine learning"
+    ]
+    for field in fields:
+        update(field)

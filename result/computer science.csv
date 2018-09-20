@@ -1,0 +1,101 @@
+,id,name,affiliation,country,hindex,citation,url_picture
+0,7164,Robert Gardner,"Research Professor, University of Chicago",United States,188,214984,/scholar/images/cleardot.gif
+1,7670,Trevor Hastie,"Professor of Statistics, Stanford University",United States,115,179434,/scholar/images/cleardot.gif
+2,7702,Jitendra Malik,"Professor of EECS, UC Berkeley",United States,116,146270,/citations?view_op=view_photo&user=oY9R5YQAAAAJ&citpid=2
+3,7323,Andrew Zisserman,University of Oxford,United Kingdom,143,143805,/scholar/images/cleardot.gif
+4,7272,Scott Shenker,"Professor of Computer Science, UC Berkeley",United States,146,129787,/scholar/images/cleardot.gif
+5,7566,Bernhard Schölkopf,"Director, Max Planck Institute for Intelligent Systems; and Distinguished Amazon Scholar",,123,118860,/scholar/images/cleardot.gif
+6,7471,Deborah Estrin,"Professor of Computer Science, Cornell Tech, Cornell University",United States,125,117052,/scholar/images/cleardot.gif
+7,7886,Kalyanmoy Deb,"Koenig Endowed Chair Professor, Electrical and Computer Engineering, Michigan State University",United States,110,117188,/scholar/images/cleardot.gif
+8,7797,Hari Balakrishnan,MIT,United States,111,115497,/scholar/images/cleardot.gif
+9,7258,Takeo Kanade,Carnegie Mellon University,United States,150,130842,/citations/images/avatar_scholar_128.png
+10,7473,Jack Dongarra,University of Tennessee; Oak Ridge National Laboratory; University of Manchester,United States,126,109555,/scholar/images/cleardot.gif
+11,7731,Yoshua Bengio,"Professor, U. Montreal (Computer Sc. & Op. Res.), MILA, CIFAR, CRM, REPARTI, GRSNC",Canada,123,133258,/scholar/images/cleardot.gif
+12,7441,Alex Sandy Pentland,Professor MIT,United States,128,109663,/scholar/images/cleardot.gif
+13,7260,Paul Thompson,"Professor of Neurology & Psychiatry, Imaging Genetics Center, USC",United States,151,108800,/scholar/images/cleardot.gif
+14,7376,Tomaso Poggio,"McDermott Professor in Brain Sciences, MIT",United States,134,103452,/scholar/images/cleardot.gif
+15,7397,Bart De Moor,KU Leuven ESAT-Stadius,,133,98691,/scholar/images/cleardot.gif
+16,7671,Shankar Sastry,University of California,United States,114,98569,/citations/images/avatar_scholar_128.png
+17,7361,Peter Hall,University of Melbourne,Australia,136,94698,/citations/images/avatar_scholar_128.png
+18,7362,Richard Cavanaugh,"Associate Professor of Physics and Scientist I, University of Illinois Chicago and Fermilab",United States,137,103299,/citations?view_op=view_photo&user=lmJqEo4AAAAJ&citpid=4
+19,7340,Lei Li,"Duke University, CERN",Switzerland,150,114494,/citations?view_op=view_photo&user=f4KlrXIAAAAJ&citpid=2
+20,7299,Guanrong Chen,"Chair Professor of Electronic Engineering, City University of Hong Kong",Hong Kong,142,90596,/citations?view_op=view_photo&user=O_Eif1YAAAAJ&citpid=2
+21,7331,Sebastian Thrun,Stanford,United States,139,91764,/citations?view_op=view_photo&user=7K34d7cAAAAJ&citpid=2
+22,7674,Ion Stoica,"Professor of Computer Science, UC Berkeley",United States,115,91248,/citations/images/avatar_scholar_128.png
+23,7333,Yang Yang,Seoul National Univesity,,189,187399,/scholar/images/cleardot.gif
+24,7830,Vipin Kumar,University of Minnesota,United States,106,85745,/scholar/images/cleardot.gif
+25,7644,Ben Shneiderman,"Professor of Computer Science, University of Maryland",United States,117,77564,/scholar/images/cleardot.gif
+26,7286,Yaakov Stern,"Professsor of Neuropsychology, Columbia University College of Phsysicians and Surgeons",,145,83842,/scholar/images/cleardot.gif
+27,7483,David Cunningham,The Royal Marsden NHS Foundation Trust,United Kingdom,127,82572,/citations/images/avatar_scholar_128.png
+28,7497,Robert Schreiber,Washington University School of Medicine,United States,123,81157,/citations?view_op=view_photo&user=kd-l1MoAAAAJ&citpid=2
+29,7352,Tien Yin Wong,Singapore National Eye Center,Malaysia,139,91420,/citations?view_op=view_photo&user=f2XZEZ8AAAAJ&citpid=2
+30,7408,Wolf Singer,"Professor für Neuroscience, Max Planck Institute",Germany,130,79841,/citations/images/avatar_scholar_128.png
+31,7989,Cordelia Schmid,Research director INRIA ,France,104,81098,/scholar/images/cleardot.gif
+32,7517,Didier Dubois,chercheur au CNRS,France,124,76968,/citations/images/avatar_scholar_128.png
+33,7801,Jason Lee,"Associate Professor of Sport Management & Program Coordinator, University of North Florida",United States,111,81393,/scholar/images/cleardot.gif
+34,7418,Frede Blaabjerg,"Professor in Power Electronics, Villum Investigator, Aalborg University, Denmark",,131,79181,/scholar/images/cleardot.gif
+35,7610,Christos Faloutsos,CMU,United States,121,77768,/scholar/images/cleardot.gif
+36,7584,Henri Prade,"CNRS, France and University of Technology Sydney",France,120,74452,/citations?view_op=view_photo&user=Hw_xpykAAAAJ&citpid=2
+37,7520,Stephen Grossberg,"Wang Professor of Cognitive and Neural Systems, Boston University",United States,124,72584,/scholar/images/cleardot.gif
+38,7302,David Baker,University of Washington,United States,144,74794,/citations?view_op=view_photo&user=UKqIqRsAAAAJ&citpid=2
+39,7832,Peter Sandercock,university of Edinburgh,United Kingdom,109,73697,/scholar/images/cleardot.gif
+40,7757,Jiang He,"Professor and Chair of Epidemiology, Tulane University",United States,113,73955,/scholar/images/cleardot.gif
+41,7625,Rajkumar Buyya,"CLOUDS Lab, School of Computing and Information Systems, University of Melbourne, Australia",Australia,119,75264,/scholar/images/cleardot.gif
+42,7735,Richard Szeliski,"Computational Photography, Facebook",United States,113,72395,/scholar/images/cleardot.gif
+43,7912,Martin Vetterli,"Professor of computer and communication science, Ecole Polytechnique Federale Lausanne",Switzerland,108,69879,/scholar/images/cleardot.gif
+44,7777,Thomas Kailath,stanford university,United States,109,69508,/citations/images/avatar_scholar_128.png
+45,7611,Mario Gerla,Unknown affiliation,,118,68495,/scholar/images/cleardot.gif
+46,7502,Stephen Jackson,University of Cambridge,United Kingdom,125,68087,/scholar/images/cleardot.gif
+47,7833,Jürgen Kurths,"Professor of Physics, Humboldt University Berlin",Germany,108,66248,/scholar/images/cleardot.gif
+48,7890,Raj Mittra,"Professor, Penn State University",United States,107,67469,/scholar/images/cleardot.gif
+49,7946,Dan Boneh,"Professor of Computer Science, Stanford University",United States,107,70374,/scholar/images/cleardot.gif
+50,7541,Francisco Herrera,"Professor of Computer Science and Artificial Intelligence, Granada University",Spain,126,63866,/scholar/images/cleardot.gif
+51,7542,Hongjiang Zhang,Sourcecode Capital,China,126,61669,/scholar/images/cleardot.gif
+52,7594,Gert Pfurtscheller,"Emeritus Professor of Medical Informatics, Graz University of Technology",Austria,119,60660,/citations/images/avatar_scholar_128.png
+53,7994,Trevor Darrell,"Professor of Computer Science, U.C. Berkeley",United States,107,67348,/citations?view_op=view_photo&user=bh-uRFMAAAAJ&citpid=3
+54,7952,Yu Chen,sheffield hallam university,United Kingdom,104,59891,/citations/images/avatar_scholar_128.png
+55,7892,Andrew Smith,Unknown affiliation,,106,59103,/citations/images/avatar_scholar_128.png
+56,7916,Rama Chellappa,"Professor, ECE, Affiliate Professor, CS, UMD, College Park",United States,107,58827,/scholar/images/cleardot.gif
+57,7715,Peter Liu,University of Ottawa Heart Institute & University of Toronto,Canada,113,57424,/citations/images/avatar_scholar_128.png
+58,7435,Klaus Ley,"Professor, LIAI",,129,57243,/citations?view_op=view_photo&user=e51Ud5EAAAAJ&citpid=2
+59,7600,Gilbert Laporte,HEC Montréal and CIRRELT,Canada,120,56262,/scholar/images/cleardot.gif
+60,7739,Didier Pittet,The University of Geneva Hospitals / Faculty Medicine,Switzerland,113,54003,/citations/images/avatar_scholar_128.png
+61,7724,Mark Horowitz,Professor of Electrical Engineering and Computer Science,United States,122,49109,/scholar/images/cleardot.gif
+62,7728,Peng Shi,"Professor, School of Electrical and Electronic Engineering, The University of Adelaide",Australia,116,46564,/scholar/images/cleardot.gif
+63,8002,Xi Zhang,Texas A&M University,United States,104,37775,/citations/images/avatar_scholar_128.png
+64,111682,a a karpunin,,,-1,-1,
+65,111703,a besir kurtulmus,Algorithmia Research,,1,2,/citations?view_op=view_photo&user=vtnObvAAAAAJ&citpid=1
+66,111704,a e voronkov,,,-1,-1,
+67,111686,a i vlasov,,,-1,-1,
+68,111708,a kryukov,Postdoc in Physics at the UNAM,,4,34,/citations/images/avatar_scholar_128.png
+69,111709,a navya,Research officer in Speech Language Pathology,United States,1,1,/citations?view_op=view_photo&user=WRysrQwAAAAJ&citpid=1
+70,111691,a p demichev,,,-1,-1,
+71,111711,a pinar ozisik,,,-1,-1,
+72,111692,a r lodder,"Professor of Internet Governance and Regulation, VU University Amsterdam",Netherlands,17,1365,/scholar/images/cleardot.gif
+73,111713,a seger ii robert,,,-1,-1,
+74,111694,a selcuk uluagac,Florida International University,Germany,15,656,/scholar/images/cleardot.gif
+75,111714,a sill,Texas Tech University,United States,128,87668,/scholar/images/cleardot.gif
+76,111716,a v domashev,,,-1,-1,
+77,111718,a yu shcherbakov,,,-1,-1,
+78,111699,aad p a van moorsel,,,-1,-1,
+79,111719,aafaf ouaddah,,,-1,-1,
+80,111721,aaron m french,"VISION team, ISEN-Brest, France",France,7,161,/scholar/images/cleardot.gif
+81,111742,aashaka shah,,,-1,-1,
+82,111743,abdallah miladi,,,-1,-1,
+83,111724,abdallah zoubir ourad,,,-1,-1,
+84,111744,abdellah ait ouahman,,,-1,-1,
+85,111725,abdellah ouaguid,High National School of Electricity and Mechanics,United Kingdom,1,1,/citations?view_op=view_photo&user=QTE4pGcAAAAJ&citpid=1
+86,111745,abdelmadjid bouabdallah,,,-1,-1,
+87,111726,abdelouahid derhab,"Assistant Professor of Computer Science, King Saud University",Indonesia,12,690,/scholar/images/cleardot.gif
+88,111746,abdul ghafoor abbasi,RISE Acreo ICT,,9,250,/scholar/images/cleardot.gif
+89,111727,abdul quadir,Teacher Educator,Slovakia,24,2265,/citations?view_op=view_photo&user=AVSpXvYAAAAJ&citpid=1
+90,111728,abelardo arredondo,,,-1,-1,
+91,111748,abhi shelat,,,-1,-1,
+92,111729,abhiraj singh,Undergrad at IIT Roorkee,,0,0,/citations?view_op=view_photo&user=Vt0Ruv8AAAAJ&citpid=1
+93,111749,abhishek dubey,"Program Officer-II, Population Council",United States,53,15839,/citations?view_op=view_photo&user=4RPSuI0AAAAJ&citpid=2
+94,111750,abla smahi,,,-1,-1,
+95,111733,adam brinckman,,,-1,-1,
+96,111753,adam cecchetti,,,-1,-1,
+97,111734,adam croom,University of Pennsylvania,United States,12,553,/scholar/images/cleardot.gif
+98,111736,adam hemlin billstrom,,,-1,-1,
+99,111737,adam jatowt,Associate Professor at Kyoto University,India,22,1686,/scholar/images/cleardot.gif

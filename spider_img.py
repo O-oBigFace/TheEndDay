@@ -9,7 +9,7 @@ def spider_file(file_name):
     file_name = file_name.strip().replace(".xlsx", "")
 
     # 解析xlsx文件
-    m = util.csv_to(file_name)
+    m = util.csv_to(file_name, dir="result")
     expert_id = m.iloc[:, 0]
     expert_pic = m.iloc[:, 6]
     item = [(expert_id[i], expert_pic[i]) for i in range(len(expert_id))]
