@@ -159,7 +159,7 @@ def _parser_xlsx(file_name):
 
 
 def get_country(affiliation):
-    affiliation.replace("Unknown affiliation", "").replace("Professor", "")
+    affiliation = affiliation.replace("Unknown affiliation", "").replace("Professor", "")
     if len(affiliation) < 1:
         return ""
 
@@ -247,3 +247,4 @@ def spider_file(file_name):
 if __name__ == '__main__':
     file_name = sys.argv[1]
     spider_file(file_name)
+
