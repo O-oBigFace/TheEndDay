@@ -92,14 +92,69 @@ def _csv_to(name):
 
     # To do.
     mat = mat.fillna(value="")
-    mat = mat.iloc[: , 1].values.tolist()
+    mat = mat.iloc[:, 1].values.tolist()
     return mat
 
 
+# 处理json.dumps的问题
+def default_json(o):
+    if isinstance(o, np.int64):
+        return int(o)
+    raise TypeError
+
+
+# 存储list形式的文件
 def save_list_to_file(filename, list):
     with open(filename, "w", encoding="utf-8") as f:
         for l in list:
             f.write(json.dumps(l, default=default_json) + "\n")
+
+
+def _parser_xlsx(file_name):
+    _NAME_XLSX = file_name.replace(".xlsx", "").strip()
+    _PATH_XLSX = os.path.join(os.getcwd(), "data", "{}.xlsx".format(_NAME_XLSX))
+    m = pd.read_excel(_PATH_XLSX).fillna(value="")
+    return m
+
+
+# 通过位置获得国家
+def get_country(affiliation):
+    affiliation = affiliation.replace("Unknown affiliation", "").replace("Professor", "")
+    if len(affiliation) < 1:
+        return ""
+
+    affiliation = affiliation.split(",")[-1]
+    d = get_country_code()
+    js = None
+    times = 0
+    url = _HOST_GEONAMES.format(requests.utils.quote(affiliation))
+    while js is None and times <= 6:
+        if times > 0:
+            time.sleep(times)
+        times += 1
+        try:
+            js = _get_page(url)
+            break
+        except Exception as e:
+            logger.error("%d | %s" % (affiliation, str(e)))
+            js = None
+    data = json.loads(js).setdefault("geonames", "")
+    if len(data) < 1:
+        return ""
+    return d.setdefault(data[0].setdefault("countryCode", ""), "")
+
+
+def multi_process(function_name, begin, end, num_of_ps):
+    count = end - begin
+    quarter = count // num_of_ps
+
+    arglist = [(begin + i * quarter, begin + (i + 1) * quarter) for i in range(num_of_ps)]
+    print(arglist)
+
+    for arg in arglist:
+        process = Process(target=function_name, args=arg)
+        process.start()
+        time.sleep(3)
 
 
 # This Project.
@@ -138,65 +193,14 @@ def spider_geonames(csv_name, begin, end):
         save_list_to_file(path_result, result_list)
 
 
-def multi_process(function_name, begin, end, num_of_ps):
-    count = end - begin
-    quarter = count // num_of_ps
-
-    arglist = [(begin + i * quarter, begin + (i + 1) * quarter) for i in range(num_of_ps)]
-    print(arglist)
-
-    for arg in arglist:
-        process = Process(target=function_name, args=arg)
-        process.start()
-        time.sleep(3)
-
-
-def _parser_xlsx(file_name):
-    _NAME_XLSX = file_name.replace(".xlsx", "").strip()
-    _PATH_XLSX = os.path.join(os.getcwd(), "data", "{}.xlsx".format(_NAME_XLSX))
-    m = pd.read_excel(_PATH_XLSX).fillna(value="")
-    return m
-
-
-def get_country(affiliation):
-    affiliation = affiliation.replace("Unknown affiliation", "").replace("Professor", "")
-    if len(affiliation) < 1:
-        return ""
-
-    affiliation = affiliation.split(",")[-1]
-    d = get_country_code()
-    js = None
-    times = 0
-    url = _HOST_GEONAMES.format(requests.utils.quote(affiliation))
-    while js is None and times <= 6:
-        if times > 0:
-            time.sleep(times)
-        times += 1
-        try:
-            js = _get_page(url)
-            break
-        except Exception as e:
-            logger.error("%d | %s" % (affiliation, str(e)))
-            js = None
-    data = json.loads(js).setdefault("geonames", "")
-    if len(data) < 1:
-        return ""
-    return d.setdefault(data[0].setdefault("countryCode", ""), "")
-
-
-def default_json(o):
-    if isinstance(o, np.int64):
-        return int(o)
-    raise TypeError
-
-
 def spider_file(file_name):
     file_name = file_name.strip().replace(".xlsx", "")
+
+    # 解析xlsx文件
     m = _parser_xlsx(file_name)
     expert_id = m.iloc[:, 0]
     expert_name = m.iloc[:, 2]
-    """dataframe 中的INT64格式不支持序列化, 需要转换为int"""
-    item = [(int(expert_id[i]), expert_name[i]) for i in range(len(expert_id))]
+    item = [(expert_id[i], expert_name[i]) for i in range(len(expert_id))]
 
     path_result = os.path.join(_PATH_DIR_RESULT, "%s_%d") % (file_name, int(time.time()) % 1000)
     result_list = []
@@ -222,9 +226,12 @@ def spider_file(file_name):
                 time.sleep(max_tries)
                 author = None
 
+        item = (id,)
         if author is None:
-            result_list.append((id,))
+            result_list.append(item)
+            logger.info("%s | %s" % (file_name, json.dumps(item, default=default_json)))
             continue
+
         # logger.info("%d | %s" % (id, str(author)))
         google_id = author.id
         _name = author.name
@@ -239,7 +246,7 @@ def spider_file(file_name):
         country = get_country(affiliation)
         item = (id, _name, affiliation, google_id, email, citedby, hindex, hindex5y, i10index, i10index5y, url_picture, country)
         result_list.append(item)
-        logger.info("%s | %s" % (file_name, json.dumps(item)))
+        logger.info("%s | %s" % (file_name, json.dumps(item, default=default_json)))
     else:
         save_list_to_file(path_result, result_list)
 
