@@ -159,8 +159,10 @@ def _parser_xlsx(file_name):
 
 
 def get_country(affiliation):
+    affiliation.replace("Unknown affiliation", "").replace("Professor", "")
     if len(affiliation) < 1:
         return ""
+
     affiliation = affiliation.split(",")[-1]
     d = get_country_code()
     js = None
@@ -181,10 +183,12 @@ def get_country(affiliation):
         return ""
     return d.setdefault(data[0].setdefault("countryCode", ""), "")
 
+
 def default_json(o):
     if isinstance(o, np.int64):
         return int(o)
     raise TypeError
+
 
 def spider_file(file_name):
     file_name = file_name.strip().replace(".xlsx", "")
@@ -222,6 +226,7 @@ def spider_file(file_name):
             result_list.append((id,))
             continue
         # logger.info("%d | %s" % (id, str(author)))
+        google_id = author.id
         _name = author.name
         affiliation = author.affiliation
         email = author.email
@@ -232,7 +237,7 @@ def spider_file(file_name):
         i10index5y = author.i10index5y
         url_picture = author.url_picture
         country = get_country(affiliation)
-        item = (id, _name, affiliation, email, citedby, hindex, hindex5y, i10index, i10index5y, url_picture, country)
+        item = (id, _name, affiliation, google_id, email, citedby, hindex, hindex5y, i10index, i10index5y, url_picture, country)
         result_list.append(item)
         logger.info("%s | %s" % (file_name, json.dumps(item)))
     else:
