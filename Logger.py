@@ -3,13 +3,13 @@ import logging
 
 def get_logger(level=logging.INFO):
     logger = logging.getLogger()  # 不加名称设置root logger
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(level=level)
     formatter = logging.Formatter(
         '%(asctime)s - %(name)s - %(levelname)s: - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S')
     # 使用FileHandler输出到文件, 文件默认level:ERROR
     fh = logging.FileHandler('log')
-    fh.setLevel(logging.ERROR)
+    fh.setLevel(level)
     fh.setFormatter(formatter)
     # 使用StreamHandler输出到屏幕
     ch = logging.StreamHandler()

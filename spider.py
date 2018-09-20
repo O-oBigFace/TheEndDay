@@ -11,6 +11,7 @@ from multiprocessing import Process
 import scholar
 from countryInfo import get_country_code
 import sys
+import numpy as np
 
 """
 only spider
@@ -98,7 +99,7 @@ def _csv_to(name):
 def save_list_to_file(filename, list):
     with open(filename, "w", encoding="utf-8") as f:
         for l in list:
-            f.write(json.dumps(l) + "\n")
+            f.write(json.dumps(l, default=default_json) + "\n")
 
 
 # This Project.
@@ -130,7 +131,7 @@ def spider_geonames(csv_name, begin, end):
             except Exception as e:
                 logger.error("%d | %s" % (i, str(e)))
                 js = None
-        logger.info("%d | %s" % (i, json.dumps(js)))
+        logger.info("%d | %s" % (i, json.dumps(js, default=default_json)))
         result_list.append((i, js))
 
     else:
@@ -180,20 +181,25 @@ def get_country(affiliation):
         return ""
     return d.setdefault(data[0].setdefault("countryCode", ""), "")
 
+def default_json(o):
+    if isinstance(o, np.int64):
+        return int(o)
+    raise TypeError
 
 def spider_file(file_name):
     file_name = file_name.strip().replace(".xlsx", "")
     m = _parser_xlsx(file_name)
     expert_id = m.iloc[:, 0]
     expert_name = m.iloc[:, 2]
-    item = [(expert_id[i], expert_name[i]) for i in range(len(expert_id))]
+    """dataframe 中的INT64格式不支持序列化, 需要转换为int"""
+    item = [(int(expert_id[i]), expert_name[i]) for i in range(len(expert_id))]
 
     path_result = os.path.join(_PATH_DIR_RESULT, "%s_%d") % (file_name, int(time.time()) % 1000)
     result_list = []
 
     # expert 都是从1开始编号，在文件中都从第二行开始
     for id, name in item:
-        if id % 10 == 0:
+        if id % 10 == 6:
             save_list_to_file(path_result, result_list)
 
         author = None
@@ -226,7 +232,7 @@ def spider_file(file_name):
         i10index5y = author.i10index5y
         url_picture = author.url_picture
         country = get_country(affiliation)
-        item = (int(id), _name, affiliation, email, citedby, hindex, hindex5y, i10index, i10index5y, url_picture, country)
+        item = (id, _name, affiliation, email, citedby, hindex, hindex5y, i10index, i10index5y, url_picture, country)
         result_list.append(item)
         logger.info(item)
     else:
@@ -236,6 +242,3 @@ def spider_file(file_name):
 if __name__ == '__main__':
     file_name = sys.argv[1]
     spider_file(file_name)
-
-
-
