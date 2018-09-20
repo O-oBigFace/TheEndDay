@@ -19,7 +19,7 @@ def spider_file(file_name):
         if "user=&" in pic or "cleardot" in pic:
             continue
 
-        path_result = os.path.join(util.PATH_DIR_RESULT, "img", "%s.jpg") % str(id)
+        path_result = os.path.join(util.PATH_DIR_RESULT, "img", "%d_%s.jpg") % (file_name, str(id))
 
         data = None
         max_tries = 0
