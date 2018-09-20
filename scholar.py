@@ -44,7 +44,7 @@ _PAGESIZE = 100
 def _get_page(pagerequest):
     """Return the data for a page on scholar.google.com"""
     # Note that we include a sleep to avoid overloading the scholar server
-    time.sleep(5 + random.uniform(0, 5))
+    # time.sleep(5 + random.uniform(0, 5))
 
     # proxies
     _PROXY_HOST = "proxy.crawlera.com"
@@ -66,6 +66,31 @@ def _get_page(pagerequest):
     else:
         raise Exception('Error: {0} {1}'.format(resp.status_code, resp.reason))
 
+
+def _get_page_content(pagerequest):
+    """Return the data for a page on scholar.google.com"""
+    # Note that we include a sleep to avoid overloading the scholar server
+    # time.sleep(5 + random.uniform(0, 5))
+
+    # proxies
+    _PROXY_HOST = "proxy.crawlera.com"
+    _PROXY_POST = "8010"
+    # _PROXY_AUTH = "c3dad299d5bb46b785fda38e8322c5e4:"
+    # August
+    _PROXY_AUTH = "020f566483124ffabffb045089a73b11:"
+    _PROXIES = {
+        "https": "https://{0}@{1}:{2}/".format(_PROXY_AUTH, _PROXY_HOST, _PROXY_POST),
+        # "http": "http://{0}@{1}:{2}/".format(_PROXY_AUTH, _PROXY_HOST, _PROXY_POST)
+    }
+    resp = _SESSION.get(pagerequest, headers=_HEADERS, cookies=_COOKIES, proxies=_PROXIES, verify=False)
+
+    if resp.status_code == 200:
+        return resp.content
+    if resp.status_code == 503:
+        # Inelegant way of dealing with the G captcha
+        raise Exception('Error: {0} {1}'.format(resp.status_code, resp.reason))
+    else:
+        raise Exception('Error: {0} {1}'.format(resp.status_code, resp.reason))
 
 def _get_soup(pagerequest):
     """Return the BeautifulSoup for a page on scholar.google.com"""

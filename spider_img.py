@@ -26,7 +26,7 @@ def spider_file(file_name):
         max_tries = 0
         while data is None and max_tries < 6:
             try:
-                data = scholar._get_page(pic)
+                data = scholar._get_page_content(pic)
                 break
             except Exception as e:
                 max_tries += 1
