@@ -4,7 +4,7 @@ import time
 import spider_geonames
 import spider_g2r
 import sys
-
+import spider_img
 
 def multi_process(function_name, file_list):
     arglist = [(file,) for file in file_list]
@@ -17,7 +17,8 @@ def multi_process(function_name, file_list):
 
 if __name__ == '__main__':
     # target = spider_g2r.spider_simple
-    target = spider_geonames.spider_file
+    # target = spider_geonames.spider_file
+    target = spider_img.spider_file
     file_list = [
         "AI",
         "blockchain",
