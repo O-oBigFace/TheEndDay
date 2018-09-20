@@ -21,9 +21,9 @@ if __name__ == '__main__':
         # "AI",
         "blockchain",
         "computer science",
-        "data mining"
+        "data mining",
         "genetics",
-        "matching learning",
+        "machine learning",
     ]
 
     # for i in range(1, len(sys.argv)):
