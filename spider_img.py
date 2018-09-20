@@ -16,10 +16,11 @@ def spider_file(file_name):
 
     # expert 都是从1开始编号，在文件中都从第二行开始
     for id, pic in item:
-        if "user=&" in pic or "cleardot" in pic:
+        if "user=&" in pic or "cleardot" in pic or "avatar_scholar" in pic:
             continue
 
         path_result = os.path.join(util.PATH_DIR_RESULT, "img", "%d_%s.jpg") % (file_name, str(id))
+        pic = "https://scholar.google.com" + pic if pic[0] is "/" else pic
 
         data = None
         max_tries = 0
