@@ -16,9 +16,10 @@ def multi_process(function_name, file_list):
 
 
 if __name__ == '__main__':
-    target = spider_g2r.spider
+    # target = spider_g2r.spider_simple
+    target = spider_geonames.spider_file
     file_list = [
-        # "AI",
+        "AI",
         "blockchain",
         "computer science",
         "data mining",

@@ -64,7 +64,7 @@ def _csv_to(name):
 
     # To do.
     mat = mat.fillna(value="")
-    mat = mat.iloc[:, 1].values.tolist()
+    # mat = mat.iloc[:, 1].values.tolist()
     return mat
 
 
@@ -155,7 +155,7 @@ class Scientist(object):
         return pprint.pformat(self.__dict__)
 
 
-def spider(file_name):
+def spider_(file_name):
     file_name = file_name.strip().replace(".xlsx", "")
 
     # 解析xlsx文件
@@ -203,5 +203,55 @@ def spider(file_name):
         save_list_to_file(path_result, result_list)
 
 
+def spider_simple(file_name):
+    file_name = file_name.strip().replace(".csv", "")
+
+    # csv
+    m = _csv_to(file_name)
+    expert_id = m.iloc[:, 0]
+    expert_name = m.iloc[:, 1]
+    item = [(expert_id[i], expert_name[i]) for i in range(len(expert_id))]
+
+    path_result = os.path.join(_PATH_DIR_RESULT, "_%s_%d") % (file_name, int(time.time()) % 1000)
+    result_list = []
+
+    # expert 都是从1开始编号，在文件中都从第二行开始
+    for id, name in item:
+        if id % 10 == 6:
+            save_list_to_file(path_result, result_list)
+
+        author = None
+        max_tries = 0
+        while author is None and max_tries < 6:
+            try:
+                author = search_scientist(name).fill()
+                break
+            # 如果谷歌学术中不存在该学者的信息，则记录默认值
+            except Exception as e:
+                max_tries += 1
+                logger.error("%s | %d | %s | %s | trries: %d" % (file_name, id, name, str(e), max_tries))
+                time.sleep(max_tries)
+                author = None
+
+        item = (id,)
+        if author is None:
+            result_list.append(item)
+            logger.info("%s | %s" % (file_name, json.dumps(item, default=default_json)))
+            continue
+        _name = author.name
+        affiliation = author.affiliation
+        citedby = author.citedby
+        hindex = author.hindex
+        url_picture = author.url_picture
+        country = author.country
+        # 根据需求变化
+        item = (id, _name, affiliation, country, hindex, citedby, url_picture)
+        result_list.append(item)
+        logger.info("%s | %s" % (file_name, json.dumps(item, default=default_json)))
+    else:
+        save_list_to_file(path_result, result_list)
+
+
 if __name__ == '__main__':
-    spider("AI")
+    m = _csv_to("AI")
+    print(m)

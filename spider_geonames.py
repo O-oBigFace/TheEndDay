@@ -92,7 +92,7 @@ def _csv_to(name):
 
     # To do.
     mat = mat.fillna(value="")
-    mat = mat.iloc[:, 1].values.tolist()
+    # mat = mat.iloc[:, 1].values.tolist()
     return mat
 
 
@@ -159,6 +159,7 @@ def multi_process(function_name, begin, end, num_of_ps):
 
 # This Project.
 def spider_geonames(csv_name, begin, end):
+    # 需要修改
     affiliation = _csv_to(csv_name)
     print("%d | %d" % (begin, end))
     # To do.
@@ -197,9 +198,9 @@ def spider_file(file_name):
     file_name = file_name.strip().replace(".xlsx", "")
 
     # 解析xlsx文件
-    m = _parser_xlsx(file_name)
+    m = _csv_to(file_name)
     expert_id = m.iloc[:, 0]
-    expert_name = m.iloc[:, 2]
+    expert_name = m.iloc[:, 1]
     item = [(expert_id[i], expert_name[i]) for i in range(len(expert_id))]
 
     path_result = os.path.join(_PATH_DIR_RESULT, "%s_%d") % (file_name, int(time.time()) % 1000)
@@ -207,6 +208,7 @@ def spider_file(file_name):
 
     # expert 都是从1开始编号，在文件中都从第二行开始
     for id, name in item:
+        name = name.strip("\"\'")
         if id % 10 == 6:
             save_list_to_file(path_result, result_list)
 
@@ -236,15 +238,16 @@ def spider_file(file_name):
         google_id = author.id
         _name = author.name
         affiliation = author.affiliation
-        email = author.email
+        # email = author.email
         citedby = author.citedby
         hindex = author.hindex
-        hindex5y = author.hindex5y
-        i10index = author.i10index
-        i10index5y = author.i10index5y
+        # hindex5y = author.hindex5y
+        # i10index = author.i10index
+        # i10index5y = author.i10index5y
         url_picture = author.url_picture
         country = get_country(affiliation)
-        item = (id, _name, affiliation, google_id, email, citedby, hindex, hindex5y, i10index, i10index5y, url_picture, country)
+        # item = (id, _name, affiliation, google_id, email, citedby, hindex, hindex5y, i10index, i10index5y, url_picture, country)
+        item = (id, _name, affiliation, country, hindex, citedby, url_picture)
         result_list.append(item)
         logger.info("%s | %s" % (file_name, json.dumps(item, default=default_json)))
     else:

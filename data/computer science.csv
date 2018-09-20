@@ -1,0 +1,101 @@
+id,name,country,hindex,citation
+7164,"Robert Gardner","United States of America",184,201582
+7670,"Trevor Hastie","United States of America",113,168224
+7702,"Jitendra Malik","United States of America",112,138404
+7323,"Andrew Zisserman","United Kingdom",138,131091
+7272,"Scott Shenker","United States of America",145,124933
+7566,"Bernhard Schölkopf",null,119,118868
+7471,"Deborah Estrin","United States of America",124,114160
+7886,"Kalyanmoy Deb","United States of America",105,111943
+7797,"Hari Balakrishnan","United States of America",108,111552
+7258,"Takeo Kanade","United States of America",147,106801
+7473,"Jack Dongarra","United States of America",124,105693
+7731,"Yoshua Bengio","Canada",111,105169
+7441,"Alex Sandy Pentland","United States of America",126,104598
+7260,"Paul Thompson","United States of America",147,101609
+7376,"Tomaso Poggio","United States of America",132,97468
+7397,"Bart De Moor","Belgium",130,94873
+7671,"Shankar Sastry","United States of America",113,94602
+7361,"Peter Hall","Australia",134,91373
+7362,"Richard Cavanaugh","United States of America",134,91064
+7340,"Lei Li",null,147,87975
+7299,"Guanrong Chen","Hong Kong",141,87688
+7331,"Sebastian Thrun","United States of America",137,87405
+7674,"Ion Stoica","United States of America",113,87140
+7333,"Yang Yang","United States of America",137,84288
+7830,"Vipin Kumar","United States of America",107,82182
+7644,"Ben Shneiderman",null,115,81717
+7286,"Yaakov Stern","United States of America",143,80078
+7483,"David Cunningham",null,124,78856
+7497,"Robert Schreiber","United States of America",123,78180
+7352,"Tien Yin Wong",null,135,77709
+7408,"Wolf Singer",null,129,77168
+7989,"Cordelia Schmid",null,100,76500
+7517,"Didier Dubois","France",122,74990
+7801,"Jason Lee","United States of America",108,73826
+7418,"Frede Blaabjerg","Denmark",128,73370
+7610,"Christos Faloutsos","United States of America",117,73353
+7584,"Henri Prade","France",118,72567
+7520,"Stephen Grossberg","United States of America",122,70506
+7302,"David Baker","United States of America",141,70020
+7832,"Peter Sandercock","United Kingdom",107,69968
+7757,"Jiang He","United States of America",110,69927
+7625,"Rajkumar Buyya","Australia",116,69635
+7735,"Richard Szeliski",null,111,69001
+7912,"Martin Vetterli","Switzerland",104,67943
+7777,"Thomas Kailath","United States of America",109,67757
+7611,"Mario Gerla",null,117,66919
+7502,"Stephen Jackson","United Kingdom",123,65621
+7833,"Jürgen Kurths",null,107,62998
+7890,"Raj Mittra","United States of America",105,62739
+7946,"Dan Boneh","United States of America",102,62481
+7541,"Francisco Herrera","Spain",121,59883
+7542,"Hongjiang Zhang",null,121,59369
+7594,"Gert Pfurtscheller","Austria",118,58183
+7994,"Trevor Darrell","United States of America",100,57709
+7952,"Yu Chen","United Kingdom",102,56264
+7892,"Andrew Smith",null,105,56193
+7916,"Rama Chellappa","United States of America",104,56160
+7715,"Peter Liu","Canada",112,54772
+7435,"Klaus Ley","United States of America",127,54748
+7600,"Gilbert Laporte","Canada",118,53445
+7739,"Didier Pittet","Switzerland",111,51756
+7724,"Mark Horowitz","United States of America",112,45122
+7728,"Peng Shi","Australia",112,42526
+8002,"Xi Zhang",null,100,33981
+111682,"a a karpunin","",0,0
+111703,"a besir kurtulmus","",1,0
+111704,"a e voronkov","",0,0
+111686,"a i vlasov","",0,0
+111708,"a kryukov","Russia",4,0
+111709,"a navya","",1,0
+111691,"a p demichev","Russia",0,0
+111711,"a pinar ozisik","United States of America",0,0
+111692,"a r lodder","Netherlands",17,0
+111713,"a seger ii robert","",0,0
+111694,"a selcuk uluagac","United States of America",14,0
+111714,"a sill","United States of America",128,0
+111716,"a v domashev","",0,0
+111718,"a yu shcherbakov","Russia",0,0
+111699,"aad p a van moorsel","United Kingdom",0,0
+111719,"aafaf ouaddah","",0,0
+111721,"aaron m french","United States of America",7,0
+111742,"aashaka shah","",0,0
+111743,"abdallah miladi","Japan",0,0
+111724,"abdallah zoubir ourad","",0,0
+111744,"abdellah ait ouahman","",0,0
+111725,"abdellah ouaguid","",1,0
+111745,"abdelmadjid bouabdallah","Republic of Ireland",0,0
+111726,"abdelouahid derhab","",12,0
+111746,"abdul ghafoor abbasi","South Africa",9,0
+111727,"abdul quadir","",24,0
+111728,"abelardo arredondo","India",0,0
+111748,"abhi shelat","Switzerland",0,0
+111729,"abhiraj singh","",0,0
+111749,"abhishek dubey","United Kingdom",52,0
+111750,"abla smahi","",0,0
+111733,"adam brinckman","",0,0
+111753,"adam cecchetti","",0,0
+111734,"adam croom","",11,0
+111736,"adam hemlin billstrom","",0,0
+111737,"adam jatowt","Singapore",22,0
