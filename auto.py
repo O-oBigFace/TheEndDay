@@ -16,8 +16,8 @@ def multi_process(function_name, file_list):
 
 
 if __name__ == '__main__':
-    target = spider_geonames.spider_file
-    # target = spider_img.spider_file
+    # target = spider_geonames.spider_file
+    target = spider_img.spider_file
     file_list = [
         "AI",
         "blockchain",
