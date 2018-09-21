@@ -10,7 +10,7 @@ def spider_file(file_name):
 
     # 解析xlsx文件
     m = util.csv_to(file_name, dir="result")
-    expert_id = m.iloc[:, 0]
+    expert_id = m.iloc[:, 1]
     expert_pic = m.iloc[:, 7]
     item = [(expert_id[i], expert_pic[i]) for i in range(len(expert_id))]
 

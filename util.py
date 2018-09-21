@@ -19,6 +19,14 @@ def csv_to(name, dir="data"):
     return mat
 
 
+def csv_to_path(path):
+    mat = pd.read_csv(path)
+
+    # To do.
+    mat = mat.fillna(value="")
+    return mat
+
+
 # 处理json.dumps的问题
 def default_json(o):
     if isinstance(o, np.int64):
